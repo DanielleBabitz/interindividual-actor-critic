@@ -1,4 +1,4 @@
-#Simulation Code for “How social norms emerge: the inter-individual actor-critic”
+# Simulation Code for “How social norms emerge: the inter-individual actor-critic”
 
 **Overview**
 
