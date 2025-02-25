@@ -1,16 +1,16 @@
 # Simulation Code for “How social norms emerge: the inter-individual actor-critic”
 
-**Overview**
+## **Overview**
 
 This repository contains the simulation code used in the paper titled “How social norms emerge: the inter-individual actor-critic”. The simulations, which are described in the paper, aim to demonstrate how the inter-individual actor-critic model explains the emergence of social norms with various properties: prosociality, ingroup bias, stickiness, self-reinforcement, and local conformity / global diversity.
 
 The code is written in Python, and it implements the inter-individual actor-critic model in groups of interacting agents. Below you'll find instructions on how to set up and run the simulations, as well as descriptions of the code structure.
 
-**Requirements**
+## **Requirements**
 
 Install Python packages: numply, scipy, seaborn, matplotlib, networkx, pickle.
 
-**Code Structure**
+## **Code Structure**
 
 - simulations.py: main simulation script that runs the model and outputs all results included in the paper.
   - To find a specific section, search its’ heading in the paper (e.g., “prosociality”, “stickiness”).
@@ -25,9 +25,9 @@ Install Python packages: numply, scipy, seaborn, matplotlib, networkx, pickle.
   - /local_global
 - README.md: this file.
 
-**Key functions**
+## **Key functions**
 
-**Interindividual_actor_critic**
+### **Interindividual_actor_critic**
 
 Purpose: run the interindividual actor-critic algorithm. The functions assumes there are two states (self acting, other acting).
 
@@ -50,11 +50,11 @@ Outputs: numpy arrays with the policy, V, and advantage values for all rounds, f
 
 Usage: used in all the simulations except the first one, which focuses on the individual actor-critic. The function is called using **run_all_trials()** which takes the same input + a parameter “model” (‘interindividual_actor_critic” or “individual_actor_critic”).
 
-**Simulation parameters**
+## **Simulation parameters**
 
 Here is a list of important simulation parameters that can be modified:
 
-**Hyperparameters**
+### **Hyperparameters**
 
 - ‘trials’: the number of trials in the simulation (repetitions of the same game/task).
 - ‘nt’: the number of turns each agent has to take an action, within each trial.
@@ -69,7 +69,7 @@ Here is a list of important simulation parameters that can be modified:
 - ‘actions’: action names (list).
 - ‘rewards’: action rewards from self, other (dict of lists).
 
-**Expected outputs**
+## **Expected outputs**
 
 The simulations will generate all the plots included in the paper, in the following folders:
 
@@ -81,7 +81,7 @@ The simulations will generate all the plots included in the paper, in the follow
     - Self_reinforcement: figures 7B, 7C, 7D
     - Local_global: figures 8B, 8C, 8D
 
-**Troubleshooting**
+## **Troubleshooting**
 
 The complex network package networkx may raise errors with outputing the adjacency matrix, depending on the version installed. Should this occur, troubleshoot via the networkx documentation (<https://networkx.org>) or contact us for help.
 
