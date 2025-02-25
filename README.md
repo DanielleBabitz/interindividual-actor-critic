@@ -8,12 +8,7 @@ The code is written in Python, and it implements the inter-individual actor-crit
 
 **Requirements**
 
-Python packages: numply, scipy, seaborn, matplotlib, networkx, pickle.
-
-**Setup instructions**
-
-- Add depending on how we’ll share the code.
-- Generally: put all files in the same directory/clone repository, install dependencies, and run “simulations.py”.
+Install Python packages: numply, scipy, seaborn, matplotlib, networkx, pickle.
 
 **Code Structure**
 
