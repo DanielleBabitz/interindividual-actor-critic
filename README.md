@@ -15,7 +15,7 @@ Install Python packages: numply, scipy, seaborn, matplotlib, networkx, pickle.
 - simulations.py: main simulation script that runs the model and outputs all results included in the paper.
   - To find a specific section, search its’ heading in the paper (e.g., “prosociality”, “stickiness”).
 - functions.py: a file with all functions required to run the simulations.
-- /results: folder where simulation results and graphs will be saved, subdivided into the following folders (according to the paper’s structure):
+- /results: a folder where simulation results and graphs will be saved, subdivided into the following folders (according to the paper’s structure):
   - /model
   - /prosociality
   - /ingroup_bias
@@ -36,9 +36,9 @@ Inputs:
 - HP: hyperparameter dictionary
 - adj_mat: adjacency matrix of the network (n_agents x n_agents)
 - reward_mat: reward matrix (n_agents x n_agents x n_actions)
-- turns: ordered (agent act in order from 1 to n) / random (the order of actions is randomized)
-- thetas_init: initial theta values for all agents. Default is 0 (uniform policy).
-- V_init: initial Values for all agents. Default is 0 for all states.
+- turns: ordered (agents act in order from 1 to n) / random (randomized order)
+- thetas_init: initial theta values of all agents. Default is 0 (uniform policy).
+- V_init: initial Values of all agents. Default is 0 for all states.
 - Connections: an option to create a specific adjacency matrix
   - Default is “fixed” (adjacency matrix is given as input)
   - “random”: random-regular netowrk
@@ -48,7 +48,7 @@ Inputs:
 
 Outputs: numpy arrays with the policy, V, and advantage values for all rounds, for all agents.
 
-Usage: used in all the simulations except the first one, which focuses on the individual actor-critic. The function is called using **run_all_trials()** which takes the same input + a parameter “model” (‘interindividual_actor_critic” or “individual_actor_critic”).
+Usage: used in all the simulations except the first one, which focuses on the individual actor-critic. The function is called using **run_all_trials()** which takes the same input + a parameter “model” (‘interindividual_actor_critic' or 'individual_actor_critic').
 
 ## **Simulation parameters**
 
@@ -77,9 +77,9 @@ The simulations will generate all the plots included in the paper, in the follow
     - /prosociality: figures 3B, 3C
     - /ingroup_bias: figures 4B, 4C
     - /loss_aversion: figures 5B, 5C
-    - Stickiness: figures 6B, 6C
-    - Self_reinforcement: figures 7B, 7C, 7D
-    - Local_global: figures 8B, 8C, 8D
+    - /stickiness: figures 6B, 6C
+    - /self_reinforcement: figures 7B, 7C, 7D
+    - /local_global: figures 8B, 8C, 8D
 
 ## **Troubleshooting**
 
