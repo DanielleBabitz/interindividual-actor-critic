@@ -1,9 +1,10 @@
-# Simulation Code for “How social norms emerge: the inter-individual actor-critic”
+# Simulation Code for “How social norms emerge: the interindividual actor-critic”
 
 ## **Overview**
 
-This repository contains the simulation code used in the paper titled “How social norms emerge: the inter-individual actor-critic”(link to preprint https://osf.io/preprints/psyarxiv/m9sep_v1). 
-The simulations, which are described in the paper, aim to demonstrate how the inter-individual actor-critic model explains the emergence of social norms with various properties: prosociality, ingroup bias, stickiness, self-reinforcement, and local conformity / global diversity.
+This repository contains the simulation code used in the paper titled “How social norms emerge: the inter-individual actor-critic” (link to preprint https://osf.io/preprints/psyarxiv/m9sep_v1). <br>
+<br>
+The simulations aim to demonstrate how the interindividual actor-critic model explains the emergence of social norms with various properties: prosociality, ingroup bias, stickiness, self-reinforcement, and local conformity / global diversity.
 
 The code is written in Python, and it implements the inter-individual actor-critic model in groups of interacting agents. Below you'll find instructions on how to set up and run the simulations, as well as descriptions of the code structure.
 
