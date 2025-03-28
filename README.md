@@ -75,13 +75,13 @@ Here is a list of important simulation parameters that can be modified:
 
 The simulations will generate all the plots included in the paper, in the following folders:
 
-- - /model: figures 1C, 2C
-    - /prosociality: figures 3B, 3C
-    - /ingroup_bias: figures 4B, 4C
-    - /loss_aversion: figures 5B, 5C
-    - /stickiness: figures 6B, 6C
-    - /self_reinforcement: figures 7B, 7C, 7D
-    - /local_global: figures 8B, 8C, 8D
+  - /model: figures 1C, 2C
+  - /prosociality: figures 3B, 3C
+  - /ingroup_bias: figures 4B, 4C
+  - /loss_aversion: figures 5B, 5C
+  - /stickiness: figures 6B, 6C
+  - /self_reinforcement: figures 7B, 7C, 7D
+  - /local_global: figures 8B, 8C, 8D
 
 ## **Troubleshooting**
 
